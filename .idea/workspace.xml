@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="909180c1-2e92-4c70-9f8d-35df96fc510b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/slack/slackbot/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/slack/slackbot/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
