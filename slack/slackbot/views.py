@@ -14,7 +14,7 @@ def slack(request):
             return JsonResponse(response_dict)
             # type = data_dict['url_verification']
             # token = 'snb408WDDGItzsJ9hagIfNHK'
-        except NameError:
+        except KeyError:
             return JsonResponse(data_dict)
 
 
