@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="909180c1-2e92-4c70-9f8d-35df96fc510b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/slack/slackbot/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slack/slack/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/slack/slack/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slack/slack/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/slack/slack/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/slack/slackbot/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/slack/slackbot/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +28,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../testSite" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -55,5 +54,11 @@
       <updated>1576097826404</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="743" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1576141662177">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="743" y="310" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1576141662177" />
   </component>
 </project>
