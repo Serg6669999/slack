@@ -51,7 +51,18 @@ def slack(request):
                         "event_id": event_id,
                         "event_time": event_time,
                         }
-            return JsonResponse(response)
+            response_3 = {"type": "reaction_added",
+                          "user": user,
+                          "reaction": "thumbsup",
+                          "item_user": user,
+                          "item": {"type": "message",
+                                   "channel": channel,
+                                   "ts": ts,
+                                   "text": text,
+                                   },
+                          "event_ts": event_ts
+                          }
+            return JsonResponse(response_3)
 
 
 post_request = {
@@ -92,4 +103,16 @@ response_ = {
     "authed_users": "U061F7AUR",
     "event_id": "Ev9UQ52YNA",
     "event_time": 1234567890
+}
+response_2 = {
+    "type": "reaction_added",
+    "user": "U024BE7LH",
+    "reaction": "thumbsup",
+    "item_user": "U0G9QF9C6",
+    "item": {
+        "type": "message",
+        "channel": "C0G9QF9GZ",
+        "ts": "1360782400.498405"
+    },
+    "event_ts": "1360782804.083113"
 }
