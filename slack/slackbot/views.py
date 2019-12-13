@@ -8,6 +8,7 @@ def slack(request):
     if request.method == 'POST':
         data = request.body.decode('utf-8')
         data_dict = json.loads(data)
+        print(data_dict)
         try:
             challenge = data_dict['challenge']
             response_dict = {'challenge': challenge}
