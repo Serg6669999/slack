@@ -1,6 +1,7 @@
 from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse
 import json
+import requests
 
 
 @csrf_exempt
@@ -63,7 +64,12 @@ def slack(request):
                                    },
                           "event_ts": event_ts
                           }
-            return JsonResponse(response_3)
+            response_massage = {"channel": channel,
+                                "text": "Что желаете?"
+                                }
+            url_slack_massege = 'https://slack.com/api/chat.postMessage'
+            send_massage_slack_bot = requests.post(url_slack_massege, json=response_massage)
+            return send_massage_slack_bot
 
 
 post_request = {
