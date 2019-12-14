@@ -67,9 +67,9 @@ def slack(request):
             response_massage = {"channel": channel,
                                 "text": "Что желаете?"
                                 }
-            url_slack_massege = 'https://slack.com/api/chat.postMessage'
-            send_massage_slack_bot = requests.post(url_slack_massege, json=response_massage)
-            return send_massage_slack_bot
+            url_slack_massage = 'https://slack.com/api/chat.postMessage'
+
+            return requests.post(url_slack_massage, json=response_massage)
 
 
 post_request = {
