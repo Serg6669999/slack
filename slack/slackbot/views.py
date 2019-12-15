@@ -1,5 +1,5 @@
 from django.views.decorators.csrf import csrf_exempt
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponseRedirect
 import json
 import requests
 
@@ -65,10 +65,12 @@ def slack(request):
                           "event_ts": event_ts
                           }
             response_massage = {"channel": channel,
-                                "text": "Что желаете?"
+                                "text": "Что желаете?",
+                                "token": 'xoxp-870665549127-856024027186-857382292611-b0ed9a6bc5e54bb6bc90d9bdbc700b8e'
                                 }
             url_slack_massage = 'https://slack.com/api/chat.postMessage'
             send_massage_slack_bot = requests.post(url_slack_massage, json=response_massage)
+            print(send_massage_slack_bot.content)
 
 
 post_request = {
